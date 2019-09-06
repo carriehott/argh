@@ -8,10 +8,9 @@
     <a-scene embedded arjs>
       <a-marker preset="hiro">
         <!-- Adding an OBJ file to an AR Project-->
-        <a-entity
-            obj-model= "obj: url('cottage_obj.obj');
-            mtl: url('cottage_obj.mtl')">
-        </a-entity>
+        <ar-scene>
+          <ar-marker patt="hiro.patt" content="old_computer.gif"></armarker>
+        </ar-scene>
       </a-marker>
   <a-entity camera></a-entity>
   </a-scene>
