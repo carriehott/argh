@@ -5,9 +5,7 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best;'>
-      <a-assets>
-        <a-asset-item id="bag" src="/scene.gltf"></a-asset-item>
-    </a-assets>
+<a-gltf-model src="scene.gltf"></a-gltf-model>
   	<a-marker preset="hiro">
       <a-entity gltf-model="#bag" rotation= "180 0 0">
       </a-entity>
