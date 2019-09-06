@@ -1,21 +1,21 @@
 <!doctype HTML>
 <html>
 
-<script src=”https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
 <body style=’margin : 0px; overflow: hidden;’>
-
   <a-scene embedded arjs=’sourceType: webcam;’>
-
-      <a-marker preset="hiro">
+      <a-marker preset=’hiro’>
+        <!-- Adding an OBJ file to an AR Project-->
         <a-entity
-            obj-model= obj: url("Filing cabinet OBJ.obj")
+            obj-model= "obj: url(/Whale/10054_Whale_v2_L3.obj);
+            mtl: url(/Whale/10054_Whale_v2_L3.mtl)">
         </a-entity>
+
       </a-marker>
   <a-entity camera>
   </a-entity>
   </a-scene>
-
 </body>
 </html>
