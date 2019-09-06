@@ -6,15 +6,13 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
-
     <a-marker preset="hiro">
-      <a-scene>
+
         <a-assets>
           <a-asset-item id="bag" src="scene.gltf"></a-asset-item>
         </a-assets>
 
         <a-entity gltf-model="#bag"></a-entity>
-      </a-scene>
 
     </a-marker>
 
