@@ -8,11 +8,13 @@
   <a-scene embedded arjs='sourceType: webcam;'>
 
     <a-marker preset="hiro">
-      <!--Adding a glTF 2.0 model to your scene-->
-      <a-entity
-      gltf-model-next="src: url(scene.gltf);"
-      >
-      </a-entity>
+      <a-scene>
+        <a-assets>
+          <a-asset-item id="bag" src="scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#bag"></a-entity>
+      </a-scene>
 
     </a-marker>
 
