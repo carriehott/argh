@@ -6,16 +6,14 @@
 
 <body style=’margin : 0px; overflow: hidden;’>
   <a-scene embedded arjs=’sourceType: webcam;’>
-      <a-marker preset=’hiro’>
+      <a-marker preset="hiro">
         <!-- Adding an OBJ file to an AR Project-->
         <a-entity
             obj-model= "obj: url('cottage_obj.obj');
             mtl: url('cottage_obj.mtl')">
         </a-entity>
-
       </a-marker>
-  <a-entity camera>
-  </a-entity>
+  <a-entity camera></a-entity>
   </a-scene>
 </body>
 </html>
