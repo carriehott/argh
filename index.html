@@ -7,7 +7,15 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-        <a-image src="Whale/Killer-Whale.png" width="2" height="1"></a-image>
+    <a-scene>
+<a-assets>
+<a-asset-item id="whale-obj" src="Whale/10054_Whale_v2_L3.obj"></a-asset-item>
+<a-asset-item id="whale-mtl" src="Whale/10054_Whale_v2_L3.mtl"></a-asset-item>
+</a-assets>
+
+<!-- Using the asset management system. -->
+<a-obj-model src="#whale-obj" mtl="#whale-mtl"></a-obj-model>
+</a-scene>
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
