@@ -7,8 +7,9 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <a-box position='0 0.5 0' color="tomato" material='opacity: 0.5;'></a-box>
-    <a animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite">
+    <a-box position='0 0.5 0' color="tomato" material='opacity: 0.5;'
+    animation="property: position; to: 5 1.6 0; dur: 1500; easing: linear"></a-box>
+
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
