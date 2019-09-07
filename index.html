@@ -8,9 +8,16 @@
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
     <a-scene>
-      <!-- Red directional light shining from the top left. -->
-      <a-light color="red" position="-1 1 0"></a-light>
-               </a-scene>
+    <a-assets>
+      <a-asset-item id="whale" src="Whale/Mesh_Whale.gltf">
+    </a-assets>
+
+    <!-- Using the asset management system. -->
+    <a-gltf-model src="#whale"></a-gltf-model>
+
+    <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+    <a-gltf-model src="Whale/Mesh_Whale.gltf"></a-gltf-model>
+  </a-scene>
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
 
