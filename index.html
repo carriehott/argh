@@ -9,12 +9,7 @@
       <a-marker preset='hiro'>
         <!-- Adding an OBJ file to an AR Project-->
         <a-scene>
-          <a-assets>
-            <a-asset-item id="whale-obj" src="/Whale/10054_Whale_v2_L3.obj"></a-asset-item>
-            <a-asset-item id="whale-mtl" src="/Whale/10054_Whale_v2_L3.mtl"></a-asset-item>
-          </a-assets>
-
-          <a-entity obj-model="obj: #whale-obj; mtl: #whale-mtl"></a-entity>
+          <a-entity obj-model="obj: url(/Whale/10054_Whale_v2_L3.obj); mtl: url(/Whale/10054_Whale_v2_L3.mtl)"></a-entity>
         </a-scene>
       </a-marker>
   <a-entity camera></a-entity>
