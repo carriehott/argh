@@ -8,13 +8,8 @@
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
     <a-scene>
-      <a-assets>
-        <img id="my-image" src="Whale/Killer-Whale.png">
-      </a-assets>
-      <!-- Using the asset management system. -->
-      <a-curvedimage src="#my-image" height="3.0" radius="5.7" theta-length="72"
-                     rotation="0 10 0" scale="0.5 0.5 0.5"></a-curvedimage>
-    <a-curvedimage src="Whale/Killer-Whale.png"></a-curvedimage>
+      <!-- Red directional light shining from the top left. -->
+      <a-light color="red" position="-1 1 0"></a-light>
                </a-scene>
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
